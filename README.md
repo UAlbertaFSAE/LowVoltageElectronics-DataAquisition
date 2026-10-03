@@ -46,10 +46,11 @@ Software libraries and tools used across LV and DAQ work.
 
 ### Installation
 
-```bash
-# Example: replace with your actual install steps
-pip install -r requirements.txt
-```
+Install GitHub Desktop [https://desktop.github.com/download/] 
+If you forget to pull, you won't see updated information. 
+Start off with pulling and syncing your repo and checking the repo log online. 
+Nothing is lost on git. We can always restore older versions as long as you regularly push. 
+You don't need to learn the terminal commands, GitHub Desktop has buttons for everything. 
 
 ---
 
