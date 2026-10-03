@@ -19,7 +19,7 @@ You don't need to learn the terminal commands, GitHub Desktop has buttons for ev
 2. **Pushes and merges need approval.** Direct pushes and merges to this repository are not permitted without sign-off. Please message **Ashwin** or **Duru** to push to this repo.
 3. **Report anything broken** (bad data, failing scripts, dead links, errors in docs) to **Ashwin** or **Duru**.
 
-# Suggested workflow
+## Suggested workflow
 
 ### 1. Fork the repo on GitHub, then clone your fork. 
 Do not clone the original repo. First, find the 'fork' button on the top right. It's between 'watch' and 'star'. 
