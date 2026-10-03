@@ -19,15 +19,15 @@ You don't need to learn the terminal commands, GitHub Desktop has buttons for ev
 2. **Pushes and merges need approval.** Direct pushes and merges to this repository are not permitted without sign-off. Please message **Ashwin** or **Duru** to push to this repo.
 3. **Report anything broken** (bad data, failing scripts, dead links, errors in docs) to **Ashwin** or **Duru**.
 
-### Suggested workflow
+# Suggested workflow
 
-# 1. Fork the repo on GitHub, then clone your fork. 
+### 1. Fork the repo on GitHub, then clone your fork. 
 Do not clone the original repo. First, find the 'fork' button on the top right. It's between 'watch' and 'star'. 
 Edit the name of the fork and add your name in the beginning. This will help you distinguish the fork and the upstream repo. 
 When the main page of the fork opens, click on the green 'code' button and choose 'open with GitHub Desktop'. 
 On GitHub Desktop it will ask you for a local path. Press 'clone repo'. This is the local alias for your repo. 
 
-# 2. Track the original repo to pull in updates
+### 2. Track the original repo to pull in updates
 Simply click 'fetch origin' on GitHub Desktop. 
 
 You can also do this in the terminal:
@@ -36,7 +36,7 @@ git remote add upstream https://github.com/<team-org>/<repo-name>.git
 git fetch upstream
 git merge upstream/main
 ```
-# 3. Work and commit in your fork
+### 3. Work and commit in your fork
 ``` bash
 git checkout -b my-feature
 git add .
