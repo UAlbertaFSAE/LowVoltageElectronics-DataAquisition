@@ -56,8 +56,8 @@ Software libraries and tools used across LV and DAQ work.
 
 | Library / Tool | Purpose | Version | Link |
 | -------------- | ------- | ------- | ---- |
-| KiCAD Library | FSAE KiCAD library to standardize PCB builds | [0.0] | [link coming soon] |
-| X | X | [x.y.z] | [link] |
+| KiCAD Library | FSAE KiCAD library to standardize PCB builds. | [0.0] | [link coming soon] |
+| KiCAD Netlist | Netlist to send to KiCAD checker later. It describes which component pins are connected to which nets. | v0.1 | nets.realnets.csv |
 | X | X | [x.y.z] | [link] |
 | X | X | [x.y.z] | [link] |
 
