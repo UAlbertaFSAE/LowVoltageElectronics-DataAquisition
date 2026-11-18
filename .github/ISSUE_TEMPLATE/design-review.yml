@@ -1,0 +1,30 @@
+name: Design review
+description: Ask for a schematic or layout review before fab
+labels: ["type:design-review", "needs-review"]
+body:
+  - type: input
+    id: board
+    attributes:
+      label: Board repo
+    validations:
+      required: true
+  - type: input
+    id: rev
+    attributes:
+      label: Revision to be tagged
+      description: V<n>-<rev>, e.g. V1-AA
+    validations:
+      required: true
+  - type: input
+    id: pr
+    attributes:
+      label: Pull request link
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before review
+      options:
+        - label: ERC and DRC clean (CI green on the PR)
+        - label: Every part is in lib/UA_KICAD_LIB with manufacturer P/N and datasheet
+        - label: Harness connectors use C-06 net names and the pinout matches the harness
+        - label: README revision table updated
