@@ -13,3 +13,33 @@
 [submodule "lib/UA_KICAD_LIB"]
 	path = lib/UA_KICAD_LIB
 	url = https://github.com/UAlbertaFSAE/UA_KICAD_LIB.git
+[submodule "boards/UA_PDM_V1_TM"]
+	path = boards/UA_PDM_V1_TM
+	url = https://github.com/UAlbertaFSAE/UA_PDM_V1_TM.git
+[submodule "boards/UA_LV_BMS_V1_JW"]
+	path = boards/UA_LV_BMS_V1_JW
+	url = https://github.com/UAlbertaFSAE/UA_LV_BMS_V1_JW.git
+[submodule "boards/UA_LV_COMPUTER_V1"]
+	path = boards/UA_LV_COMPUTER_V1
+	url = https://github.com/UAlbertaFSAE/UA_LV_COMPUTER_V1.git
+[submodule "boards/UA_ACC_V1_KD"]
+	path = boards/UA_ACC_V1_KD
+	url = https://github.com/UAlbertaFSAE/UA_ACC_V1_KD.git
+[submodule "boards/UA_DC_V1"]
+	path = boards/UA_DC_V1
+	url = https://github.com/UAlbertaFSAE/UA_DC_V1.git
+[submodule "boards/UA_DL_HMI_V1"]
+	path = boards/UA_DL_HMI_V1
+	url = https://github.com/UAlbertaFSAE/UA_DL_HMI_V1.git
+[submodule "boards/UA_TEL_USB_V1_AY"]
+	path = boards/UA_TEL_USB_V1_AY
+	url = https://github.com/UAlbertaFSAE/UA_TEL_USB_V1_AY.git
+[submodule "boards/UA_GNSS_IMU_V1_DV"]
+	path = boards/UA_GNSS_IMU_V1_DV
+	url = https://github.com/UAlbertaFSAE/UA_GNSS_IMU_V1_DV.git
+[submodule "boards/UA_STRAIN_DAQ_V1_DP"]
+	path = boards/UA_STRAIN_DAQ_V1_DP
+	url = https://github.com/UAlbertaFSAE/UA_STRAIN_DAQ_V1_DP.git
+[submodule "boards/UA_AUTO_STEER_V1_DP"]
+	path = boards/UA_AUTO_STEER_V1_DP
+	url = https://github.com/UAlbertaFSAE/UA_AUTO_STEER_V1_DP.git
