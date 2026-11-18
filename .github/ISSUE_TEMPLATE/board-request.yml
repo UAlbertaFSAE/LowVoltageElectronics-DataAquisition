@@ -1,0 +1,33 @@
+name: New board
+description: Ask for a new PCB repo (created from UA_BOARD_TEMPLATE)
+labels: ["type:feature"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Repo name
+      description: UA_<FUNCTION>_V<n>, no initials (e.g. UA_FAN_CTRL_V1)
+    validations:
+      required: true
+  - type: textarea
+    id: function
+    attributes:
+      label: Function
+      description: What the board does and where it sits in the car
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Owner (GitHub user)
+    validations:
+      required: true
+  - type: textarea
+    id: connectors
+    attributes:
+      label: Harness connectors
+      description: Connector families and harness names if known (net names follow C-06, see UA_KICAD_LIB DESIGN_RULES.md)
+  - type: input
+    id: due
+    attributes:
+      label: Needed by

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to contribute (fork, PR, review)
+    url: https://github.com/UAlbertaFSAE/LowVoltageElectronics-DataAquisition/blob/main/CONTRIBUTING.md
+    about: Read this before opening a pull request

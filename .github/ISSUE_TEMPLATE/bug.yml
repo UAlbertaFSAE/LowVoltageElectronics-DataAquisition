@@ -1,0 +1,23 @@
+name: Bug or broken data
+description: Bad data, a failing script, a dead link or an error in the docs or a board
+labels: ["type:bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Repo, file or board (e.g. boards/UA_VCU_V04, nets.realnets.csv)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong
+      description: What you saw, and what you expected instead
+    validations:
+      required: true
+  - type: dropdown
+    id: sub
+    attributes:
+      label: Area
+      options: [LV, DAQ, both]

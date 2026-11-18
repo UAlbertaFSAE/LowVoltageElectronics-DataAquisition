@@ -1,0 +1,23 @@
+name: Harness change
+description: A board connector, pinout or net name change the harness must follow
+labels: ["harness-impact"]
+body:
+  - type: input
+    id: board
+    attributes:
+      label: Board repo and connector
+      description: e.g. UA_VCU_V04 J5
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Change
+      description: Old and new pin / net (C-06 names), and why
+    validations:
+      required: true
+  - type: input
+    id: rev
+    attributes:
+      label: Board revision it lands in
+      description: V<n>-<rev>
