@@ -1,0 +1,15 @@
+[submodule "boards/UA_VCU_V04"]
+	path = boards/UA_VCU_V04
+	url = https://github.com/UAlbertaFSAE/UA_VCU_V04.git
+[submodule "boards/UA_DAQ_TEENSYDLU"]
+	path = boards/UA_DAQ_TEENSYDLU
+	url = https://github.com/UAlbertaFSAE/UA_DAQ_TEENSYDLU.git
+[submodule "boards/UA_CAN_USB_V1_NK"]
+	path = boards/UA_CAN_USB_V1_NK
+	url = https://github.com/UAlbertaFSAE/UA_CAN_USB_V1_NK.git
+[submodule "boards/UA_CAN_RELAY_V1"]
+	path = boards/UA_CAN_RELAY_V1
+	url = https://github.com/UAlbertaFSAE/UA_CAN_RELAY_V1.git
+[submodule "lib/UA_KICAD_LIB"]
+	path = lib/UA_KICAD_LIB
+	url = https://github.com/UAlbertaFSAE/UA_KICAD_LIB.git
