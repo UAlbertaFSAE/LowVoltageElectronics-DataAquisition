@@ -74,22 +74,29 @@ Clone everything at once: `git clone --recurse-submodules https://github.com/UAl
 
 | Group | Board repo | KiCad project | Status |
 | --- | --- | --- | --- |
-| Control and computing | [UA_VCU_V04](https://github.com/UAlbertaFSAE/UA_VCU_V04) | `TeensyECU_V04` (vehicle control unit) | design |
+| Control and computing | [UA_VCU_V4](https://github.com/UAlbertaFSAE/UA_VCU_V4) | `TeensyECU_V04` (vehicle control unit) | design, template layout (from UA_VCU_V04@0945a3d) |
+|  | [UA_VCU_V04](https://github.com/UAlbertaFSAE/UA_VCU_V04) | `TeensyECU_V04` | source, kept unchanged |
 |  | [UA_LV_COMPUTER_V1](https://github.com/UAlbertaFSAE/UA_LV_COMPUTER_V1) | `UA_LV_COMPUTER_V1` | template, empty |
 |  | [UA_DL_HMI_V1](https://github.com/UAlbertaFSAE/UA_DL_HMI_V1) | `UA_DL_HMI_V1` | template, empty |
 | Power | [UA_PDM_V1_TM](https://github.com/UAlbertaFSAE/UA_PDM_V1_TM) | `UA_PDM_V1_TM` (power distribution module) | template, empty |
-|  | [UA_CAN_RELAY_V1](https://github.com/UAlbertaFSAE/UA_CAN_RELAY_V1) | `UA_Front_PDM_V1` (front PDM) | design (PCB empty) |
+|  | [UA_FRONT_PDM_V1](https://github.com/UAlbertaFSAE/UA_FRONT_PDM_V1) | `UA_Front_PDM_V1` (front PDM) | design (PCB empty), template layout (from UA_CAN_RELAY_V1@c477784) |
+|  | [UA_RELAY_DRIVER_V1](https://github.com/UAlbertaFSAE/UA_RELAY_DRIVER_V1) | `UA_RELAY_DRIVER_V1_TG` (relay driver) | design, template layout (from UA_CAN_RELAY_V1@c477784) |
+|  | [UA_CAN_RELAY_V1](https://github.com/UAlbertaFSAE/UA_CAN_RELAY_V1) | both projects | source, kept unchanged |
 |  | [UA_LV_BMS_V1_JW](https://github.com/UAlbertaFSAE/UA_LV_BMS_V1_JW) | `UA_LV_BMS_V1_JW` (LV BMS) | template, empty |
-| DAQ and sensors | [UA_DAQ_TEENSYDLU](https://github.com/UAlbertaFSAE/UA_DAQ_TEENSYDLU) | `TeensyDLU_V01` (data logger) | design |
+| DAQ and sensors | [UA_DAQ_DLU_V1](https://github.com/UAlbertaFSAE/UA_DAQ_DLU_V1) | `TeensyDLU_V01` (data logger) | design, template layout (from UA_DAQ_TEENSYDLU@56645cd) |
+|  | [UA_DAQ_TEENSYDLU](https://github.com/UAlbertaFSAE/UA_DAQ_TEENSYDLU) | `TeensyDLU_V01` | source, kept unchanged |
 |  | [UA_STRAIN_DAQ_V1_DP](https://github.com/UAlbertaFSAE/UA_STRAIN_DAQ_V1_DP) | `UA_STRAIN_DAQ_V1_DP` | template, empty |
 |  | [UA_GNSS_IMU_V1_DV](https://github.com/UAlbertaFSAE/UA_GNSS_IMU_V1_DV) | `UA_GNSS_IMU_V1_DV` | template, empty |
-| Communication | [UA_CAN_USB_V1_NK](https://github.com/UAlbertaFSAE/UA_CAN_USB_V1_NK) | `hardware/fsae-devboard` (CAN-USB) | design |
+| Communication | [UA_CAN_USB_V1](https://github.com/UAlbertaFSAE/UA_CAN_USB_V1) | `fsae-devboard` (CAN-USB) + `firmware/` | design, template layout (from UA_CAN_USB_V1_NK@a38bdc7) |
+|  | [UA_CAN_USB_V1_NK](https://github.com/UAlbertaFSAE/UA_CAN_USB_V1_NK) | `hardware/fsae-devboard` | source, kept unchanged |
 |  | [UA_TEL_USB_V1_AY](https://github.com/UAlbertaFSAE/UA_TEL_USB_V1_AY) | `UA_TEL_USB_V1_AY` (telemetry) | template, empty |
 | Autonomous interface | [UA_AUTO_STEER_V1_DP](https://github.com/UAlbertaFSAE/UA_AUTO_STEER_V1_DP) | `UA_AUTO_STEER_V1_DP` | template, empty |
 | Function to confirm | [UA_ACC_V1_KD](https://github.com/UAlbertaFSAE/UA_ACC_V1_KD) | `UA_ACC_V1_KD` | template, empty |
 |  | [UA_DC_V1](https://github.com/UAlbertaFSAE/UA_DC_V1) | `UA_DC_V1` | template, empty |
 
-All 14 boards are in `boards/<repo>`. Boards marked "template, empty" got their first commit from
+All boards are in `boards/<repo>`. The four boards that existed before the template were rebuilt in the template
+layout into new repos (`UA_<FUNCTION>_V<n>`, revisions as tags `V<n>-<rev>`); work continues there. The source
+repos stay as they were, with their history. Boards marked "template, empty" got their first commit from
 [UA_BOARD_TEMPLATE](https://github.com/UAlbertaFSAE/UA_BOARD_TEMPLATE) (KiCad project skeleton, library submodule,
 ERC/DRC CI); their owners start the design there.
 

@@ -43,3 +43,18 @@
 [submodule "boards/UA_AUTO_STEER_V1_DP"]
 	path = boards/UA_AUTO_STEER_V1_DP
 	url = https://github.com/UAlbertaFSAE/UA_AUTO_STEER_V1_DP.git
+[submodule "boards/UA_VCU_V4"]
+	path = boards/UA_VCU_V4
+	url = https://github.com/UAlbertaFSAE/UA_VCU_V4.git
+[submodule "boards/UA_DAQ_DLU_V1"]
+	path = boards/UA_DAQ_DLU_V1
+	url = https://github.com/UAlbertaFSAE/UA_DAQ_DLU_V1.git
+[submodule "boards/UA_CAN_USB_V1"]
+	path = boards/UA_CAN_USB_V1
+	url = https://github.com/UAlbertaFSAE/UA_CAN_USB_V1.git
+[submodule "boards/UA_FRONT_PDM_V1"]
+	path = boards/UA_FRONT_PDM_V1
+	url = https://github.com/UAlbertaFSAE/UA_FRONT_PDM_V1.git
+[submodule "boards/UA_RELAY_DRIVER_V1"]
+	path = boards/UA_RELAY_DRIVER_V1
+	url = https://github.com/UAlbertaFSAE/UA_RELAY_DRIVER_V1.git
