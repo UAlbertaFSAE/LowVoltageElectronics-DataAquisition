@@ -56,12 +56,32 @@ Software libraries and tools used across LV and DAQ work.
 
 | Library / Tool | Purpose | Version | Link |
 | -------------- | ------- | ------- | ---- |
-| KiCAD Library | FSAE KiCAD library to standardize PCB builds. | [0.0] | [link coming soon] |
+| KiCAD Library | FSAE KiCAD library to standardize PCB builds: symbols, footprints, 3D models, design blocks, and the shared [design rules](https://github.com/UAlbertaFSAE/UA_KICAD_LIB/blob/main/DESIGN_RULES.md). | [0.1] | [UA_KICAD_LIB](https://github.com/UAlbertaFSAE/UA_KICAD_LIB) (private; also at `lib/UA_KICAD_LIB`) |
 | KiCAD Netlist | Netlist to send to KiCAD checker later. It describes which component pins are connected to which nets. | v0.1 | [link](nets.realnets.csv) |
 | X | X | [x.y.z] | [link] |
 | X | X | [x.y.z] | [link] |
 
 
+
+## Boards
+
+Each PCB keeps its own repository; this repo links them as git submodules under `boards/` (pinned to a commit), plus
+the shared library under `lib/`. Nothing moved: work in the board repos as before. Board repos are private; you need
+org access to open them.
+
+Clone everything at once: `git clone --recurse-submodules https://github.com/UAlbertaFSAE/LowVoltageElectronics-DataAquisition.git`
+(GitHub Desktop fetches submodules on clone). Update the pinned boards later: `git submodule update --remote`.
+
+| Board repo | KiCad project | Status |
+| --- | --- | --- |
+| [UA_VCU_V04](https://github.com/UAlbertaFSAE/UA_VCU_V04) | `TeensyECU_V04` (vehicle control unit) | in `boards/` |
+| [UA_DAQ_TEENSYDLU](https://github.com/UAlbertaFSAE/UA_DAQ_TEENSYDLU) | `TeensyDLU_V01` | in `boards/` |
+| [UA_CAN_USB_V1_NK](https://github.com/UAlbertaFSAE/UA_CAN_USB_V1_NK) | `hardware/fsae-devboard` | in `boards/` |
+| [UA_CAN_RELAY_V1](https://github.com/UAlbertaFSAE/UA_CAN_RELAY_V1) | `UA_Front_PDM_V1` | in `boards/` |
+| UA_PDM_V1_TM, UA_LV_BMS_V1_JW, UA_LV_COMPUTER_V1, UA_ACC_V1_KD, UA_DC_V1, UA_DL_HMI_V1, UA_TEL_USB_V1_AY, UA_GNSS_IMU_V1_DV, UA_STRAIN_DAQ_V1_DP, UA_AUTO_STEER_V1_DP | - | empty; added here once they have a first commit |
+
+New boards: follow the [design rules](https://github.com/UAlbertaFSAE/UA_KICAD_LIB/blob/main/DESIGN_RULES.md) and add
+the library as a submodule (`lib/UA_KICAD_LIB`, see its README).
 
 ## Documents
 
